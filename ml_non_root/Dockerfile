@@ -6,7 +6,7 @@ LABEL maintainer="zaemyung@gmail.com" \
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
     sudo && rm -rf /var/lib/apt/lists/*
 
-ARG UNAME=zaemyung
+ARG UNAME=josh
 ARG UID=1000
 ARG GID=1000
 RUN groupadd -g $GID $UNAME
